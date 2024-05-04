@@ -16,10 +16,12 @@ const slideShow = function () {
 function openNav() {
   document.querySelector(".nav-hamburger").classList.add("openNavBar");
   document.querySelector(".nav-hamburger").classList.remove("closeNavBar");
+  document.querySelector("html").style.overflow = "hidden"
 }
 function closeNav() {
   document.querySelector(".nav-hamburger").classList.add("closeNavBar");
   document.querySelector(".nav-hamburger").classList.remove("openNavBar");
+  document.querySelector("html").style.overflow = "scroll"
 }
 
 let currentSlide = 0;
