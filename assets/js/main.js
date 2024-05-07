@@ -16,12 +16,12 @@ const slideShow = function () {
 function openNav() {
   document.querySelector(".nav-hamburger").classList.add("openNavBar");
   document.querySelector(".nav-hamburger").classList.remove("closeNavBar");
-  document.querySelector("html").style.overflow = "hidden"
+  document.querySelector("html").classList.add("overflow-y-hidden")
 }
 function closeNav() {
   document.querySelector(".nav-hamburger").classList.add("closeNavBar");
   document.querySelector(".nav-hamburger").classList.remove("openNavBar");
-  document.querySelector("html").style.overflow = "scroll"
+  document.querySelector("html").classList.remove("overflow-y-hidden")
 }
 
 let currentSlide = 0;
@@ -33,3 +33,17 @@ function pushArrow(n) {
   currentSlide = Math.max(0, Math.min(currentSlide + n, images.length - 1));
   carousel.scrollTo({ left: currentSlide * imageWidth, behavior: "smooth" });
 }
+
+let accordionBtn = document.querySelectorAll("#accordion-btn");
+let accordionDropdown = document.querySelectorAll("#accordion-dropdown");
+let plusIcon = document.querySelectorAll("#plus-icon");
+let closeIcon = document.querySelectorAll("#close-icon");
+
+accordionBtn.forEach((btn, i) => {
+  btn.addEventListener("click", (e) => {
+    accordionDropdown[i].classList.toggle("max-h-[200px]");
+    plusIcon[i].classList.toggle("hidden");
+    closeIcon[i].classList.toggle("hidden");
+  });
+});
+
