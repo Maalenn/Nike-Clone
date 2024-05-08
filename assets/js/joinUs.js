@@ -40,54 +40,6 @@ function closeNav() {
   document.querySelector("html").classList.remove("overflow-y-hidden")
 }
 
-
-// const listDrop = document.querySelectorAll("#listDrop");
-// const dropDown = document.querySelectorAll("#dropDown");
-// const toggleDrop = document.querySelectorAll("#toggleDrop");
-// const toggleUp = document.querySelectorAll("#toggleUp");
-
-// console.log(btnDrop);
-
-// listDrop.forEach((btn, i) => {
-//   btn.addEventListener("click", () => {
-//     dropDown[i].classList.toggle("h-[100px]");
-//     dropDown[i].classList.toggle("opacity-100");
-//     toggleDrop[i].classList.toggle("hidden");
-//     toggleUp[i].classList.toggle("hidden");
-//   });
-// });
-
-// dropClick.addEventListener("click", function () {
-//   addStyle.style.height = "100px";
-//   addStyle.style.opacity = "1";
-//   toggleDrop.classList.toggle("hidden");
-//   toggleUp.classList.toggle("hidden");
-// });
-
-// dropClose.addEventListener("click", function () {
-//   addStyle.style.height = "0px";
-//   addStyle.style.opacity = "0";
-//   toggleDrop.classList.toggle("hidden");
-//   toggleUp.classList.toggle("hidden");
-// });
-
-// let accordionBtn = document.querySelectorAll("#accordion-btn");
-// let accordionDropdown = document.querySelectorAll("#accordion-dropdown");
-// let plusIcon = document.querySelectorAll("#plus-icon");
-// let closeIcon = document.querySelectorAll("#close-icon");
-
-//Toggle Drobdown sub-info
-// let accordionBtn = document.querySelectorAll("#accordion-btn");
-// let accordionDropdown = document.querySelectorAll("#accordion-dropdown");
-// let plusIcon = document.querySelectorAll("#plus-icon");
-// let closeIcon = document.querySelectorAll("#close-icon");
-// accordionBtn.forEach((btn, i) => {
-//   btn.addEventListener("click", () => {
-//     accordionDropdown[i].classList.toggle("h-[100px]");
-//     plusIcon[i].classList.toggle("hidden");
-//     closeIcon[i].classList.toggle("hidden");
-//   });
-// });
 let accordionBtn = document.querySelectorAll("#accordion-btn");
 let accordionDropdown = document.querySelectorAll("#accordion-dropdown");
 let plusIcon = document.querySelectorAll("#plus-icon");
