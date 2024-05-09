@@ -17,11 +17,14 @@ function openNav() {
   document.querySelector(".nav-hamburger").classList.add("openNavBar");
   document.querySelector(".nav-hamburger").classList.remove("closeNavBar");
   document.querySelector("html").classList.add("overflow-y-hidden")
+  document.getElementById('background-blur').classList.remove('hidden');
+  document.querySelector('container-bottom').classList.add('hidden');
 }
 function closeNav() {
   document.querySelector(".nav-hamburger").classList.add("closeNavBar");
   document.querySelector(".nav-hamburger").classList.remove("openNavBar");
   document.querySelector("html").classList.remove("overflow-y-hidden")
+  document.getElementById('background-blur').classList.add('hidden');
 }
 
 let currentSlide = 0;
