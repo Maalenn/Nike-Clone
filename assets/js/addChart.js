@@ -18,7 +18,7 @@ function openNav() {
   document.querySelector(".nav-hamburger").classList.remove("closeNavBar");
   document.querySelector("html").classList.add("overflow-y-hidden")
   document.getElementById('background-blur').classList.remove('hidden');
-  document.querySelector('container-bottom').classList.add('hidden');
+
 }
 function closeNav() {
   document.querySelector(".nav-hamburger").classList.add("closeNavBar");
