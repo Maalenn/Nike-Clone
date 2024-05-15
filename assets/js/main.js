@@ -1,3 +1,4 @@
+// function for scroll in nav bar
 var prevScrollpos = window.scrollY;
 window.onscroll = function () {
   var currentScrollPos = window.scrollY;
@@ -13,12 +14,14 @@ const slideShow = function () {
   document.query;
 };
 
+// Nav hamburger when open
 function openNav() {
   document.querySelector(".nav-hamburger").classList.add("openNavBar");
   document.querySelector(".nav-hamburger").classList.remove("closeNavBar");
   document.querySelector("html").classList.add("overflow-y-hidden")
   document.getElementById('background-blur').classList.remove('hidden');
 }
+// nav Hamburger when close
 function closeNav() {
   document.querySelector(".nav-hamburger").classList.add("closeNavBar");
   document.querySelector(".nav-hamburger").classList.remove("openNavBar");
@@ -26,6 +29,7 @@ function closeNav() {
   document.getElementById('background-blur').classList.add('hidden');
 }
 
+// slideshow fucntion 
 let currentSlide = 0;
 function pushArrow(n) {
   const carousel = document.querySelector(" .slideShow ");
@@ -36,6 +40,8 @@ function pushArrow(n) {
   carousel.scrollTo({ left: currentSlide * imageWidth, behavior: "smooth" });
 }
 
+
+// Function for arrow dropdown
 let accordionBtn = document.querySelectorAll("#accordion-btn");
 let accordionDropdown = document.querySelectorAll("#accordion-dropdown");
 let plusIcon = document.querySelectorAll("#plus-icon");

@@ -1,3 +1,4 @@
+// Function for scroll nav bar
 var prevScrollpos = window.scrollY;
 window.onscroll = function () {
   var currentScrollPos = window.scrollY;
@@ -13,6 +14,7 @@ const slideShow = function () {
   document.query;
 };
 
+// Function for open nav
 function openNav() {
   document.querySelector(".nav-hamburger").classList.add("openNavBar");
   document.querySelector(".nav-hamburger").classList.remove("closeNavBar");
@@ -20,6 +22,8 @@ function openNav() {
   document.getElementById('background-blur').classList.remove('hidden');
 
 }
+
+//Function for close nav
 function closeNav() {
   document.querySelector(".nav-hamburger").classList.add("closeNavBar");
   document.querySelector(".nav-hamburger").classList.remove("openNavBar");
@@ -27,6 +31,7 @@ function closeNav() {
   document.getElementById('background-blur').classList.add('hidden');
 }
 
+//Function for slider
 let currentSlide = 0;
 function pushArrow(n) {
   const carousel = document.querySelector(" .slideShow ");
@@ -37,6 +42,7 @@ function pushArrow(n) {
   carousel.scrollTo({ left: currentSlide * imageWidth, behavior: "smooth" });
 }
 
+// Function for dropdown
 let accordionBtn = document.querySelectorAll("#accordion-btn");
 let accordionDropdown = document.querySelectorAll("#accordion-dropdown");
 let plusIcon = document.querySelectorAll("#plus-icon");
