@@ -49,115 +49,33 @@
     <!-- End Cover Section -->
 
     <!-- Start benefit section -->
-    <membership-slider-component data-sorce="benefit-data"> </membership-slider-component>
     <section class="flex justify-center">
       <section class="max-w-[91%] h-full">
           <div class="scroll-info container">
-              <div class="scroll-des">
-                <h1>Member Benefits</h1>
+                  <div class="scroll-des">
+                      <h1>Member Benefits</h1>
+                  </div>
+                  <div class="scroll-icon">
+                      <button class="link-arrow" onclick="pushArrow(0,-1)">
+                          <div class="circle-icon icon-left">
+                          <img src="../assets/Image/arrow-left.svg" alt="Left Arrow" />
+                          </div>
+                      </button>
+                      <button class="link-arrow" onclick="pushArrow(0,1)">
+                          <div class="circle-icon icon-right">
+                          <img src="../assets/Image/arrow-right.svg" alt="Right Arrow" />
+                          </div>
+                      </button>
+                  </div>
               </div>
-              <div class="scroll-icon">
-                <button href="" class="link-arrow" onclick="pushArrow(0,-1)">
-                  <div class="circle-icon icon-left">
-                    <img src="../assets/Image/arrow-left.svg" alt="" />
-                  </div>
-                </button>
-                <button href="" class="link-arrow" onclick="pushArrow(0,1)">
-                  <div class="circle-icon icon-right">
-                    <img src="../assets/Image/arrow-right.svg" alt="" />
-                  </div>
-                </button>
-              </div>
-            </div>
-          <ul class="w-[100%] grid  grid-cols-[repeat(5,450px)] overflow-auto slideShow">
-            <li class="py-[20px] slide-list">
-              <a class="" href=""> 
-                  <div class="">
-                    <div class="relative">
-                      <div class="">
-                        <img src="../assets/Image/up1.jpeg" alt="" />
-                      </div>
-                      <div class="absolute bottom-10 left-10 text-white flex flex-col gap-10">
-                        <h3 class="text-[18px] ">Member Product</h3>
-                        <h1 class="text-[25px] ">Your Exclusive Access</h1>
-                        <button class="text-[22px] bg-white text-black px-3 py-2 rounded-[30px] max-w-[120px]">Shop</button>
-                      </div>
-                  </div>
-                  </div>
-              </a>
-            </li>
-            <li class="py-[20px] slide-list">
-                <a class="" href=""> 
-                    <div class="">
-                      <div class="relative">
-                        <div class="">
-                          <img src="../assets/Image/up5.jpg" alt="" />
-                        </div>
-                        <div class="absolute bottom-10 left-10 text-white flex flex-col gap-10">
-                          <h3 class="text-[18px] ">Member Product</h3>
-                          <h1 class="text-[25px] ">Member Product</h1>
-                          <button class="text-[22px] bg-white text-black px-3 py-2 rounded-[30px] max-w-[120px]">Shop</button>
-                        </div>
-                    </div>
-                    </div>
-                </a>
-              </li>
-            <li class="py-[20px] slide-list">
-              <a class="" href=""> 
-                  <div class="">
-                    <div class="relative">
-                      <div class="">
-                        <img src="../assets/Image/up2.jpeg" alt="" />
-                      </div>
-                      <div class="absolute bottom-10 left-10 text-white flex flex-col gap-10">
-                        <h3 class="text-[18px] ">Member Product</h3>
-                        <h1 class="text-[25px] ">Member Product</h1>
-                        <button class="text-[22px] bg-white text-black px-3 py-2 rounded-[30px] max-w-[120px]">Shop</button>
-                      </div>
-                  </div>
-                  </div>
-              </a>
-            </li>
-            <li class="py-[20px] slide-list">
-              <a class="" href=""> 
-                  <div class="">
-                    <div class="relative">
-                      <div class="">
-                        <img src="../assets/Image/up3.jpeg" alt="" />
-                      </div>
-                      <div class="absolute bottom-10 left-10 text-white flex flex-col gap-10">
-                        <h3 class="text-[18px] ">Member Product</h3>
-                        <h1 class="text-[25px] ">Member Product</h1>
-                        <button class="text-[22px] bg-white text-black px-3 py-2 rounded-[30px] max-w-[120px]">Shop</button>
-                      </div>
-                  </div>
-                  </div>
-              </a>
-            </li>
-            <li class="py-[20px] slide-list">
-              <a class="" href=""> 
-                  <div class="">
-                    <div class="relative">
-                      <div class="">
-                        <img src="../assets/Image/up4.jpg" alt="" />
-                      </div>
-                      <div class="absolute bottom-10 left-10 text-white flex flex-col gap-10">
-                        <h3 class="text-[18px] ">Member Product</h3>
-                        <h1 class="text-[25px] ">Member Product</h1>
-                        <button class="text-[22px] bg-white text-black px-3 py-2 rounded-[30px] max-w-[120px]">Shop</button>
-                      </div>
-                  </div>
-                  </div>
-              </a>
-            </li>
-            
-          </ul>
-        </section>
-    </section>
+              <membership-slider-component data-source="benefit-data"> </membership-slider-component>
+          </section>
+      </section>
     <!-- End Benefit section -->
     
     <!-- Start transform section -->
-    <section class="flex justify-center">
+    <shipping-slider-component data-source="shipping-data"> </shipping-slider-component>
+    <!-- <section class="flex justify-center">
       <section class="max-w-[91%] h-full">
           <div class="scroll-info container">
               <div class="scroll-des">
@@ -256,7 +174,7 @@
             
           </ul>
         </section>
-    </section>
+    </section> -->
     <!-- End transform section -->
     
     <!--Start Membership  -->
@@ -415,4 +333,5 @@
   <script type="module" src="../assets/js/commponent/homepage-navbar.js"></script>
     <script type="module" src="../assets/js/commponent/footer.js"></script>
     <script type="module" src="../assets/js/commponent/membership-slider.js"></script>
+    <script type="module" src="../assets/js/commponent/shipping-card.js"></script>
 </html>
