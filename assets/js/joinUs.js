@@ -41,14 +41,4 @@ function closeNav() {
   document.querySelector("html").classList.remove("overflow-y-hidden")
   document.getElementById('background-blur').classList.add('hidden');
 }
-let accordionBtn = document.querySelectorAll("#accordion-btn");
-let accordionDropdown = document.querySelectorAll("#accordion-dropdown");
-let plusIcon = document.querySelectorAll("#plus-icon");
-let closeIcon = document.querySelectorAll("#close-icon");
-accordionBtn.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    accordionDropdown[i].classList.toggle("max-h-[300px]");
-    plusIcon[i].classList.toggle("hidden");
-    closeIcon[i].classList.toggle("hidden");
-  });
-});
+

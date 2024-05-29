@@ -1,7 +1,3 @@
-
-
-
-
 import {membershipData,benefitData} from '../data/membership-data.js'
 
 const dataSources = {
