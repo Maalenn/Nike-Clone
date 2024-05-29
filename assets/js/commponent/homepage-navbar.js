@@ -5,7 +5,7 @@ const NavBarContainer = () =>{
         <nav class="nav-top container">
           <ul class="top-left">
             <li>
-              <a href="">
+              <a href="index.html">
                 <img src="../assets/Image/jorden.png" alt="" />
               </a>
             </li>
@@ -515,15 +515,15 @@ const NavBarContainer = () =>{
                 Become a Nike Member for the best products, inspiration and stories in sport. <a href="">Learn More</a>
               </span>
               <div class="btn-learn-more">
-                <button class="btn">Join Us</button>
+                <button class="btn"><a href="joinUs.html">Join Us</a></button>
                 <button class="btn">Sign In</button>
               </div>
             </li>
             <li>
               <li>
-                <a class="logo-text" href="">
+                <a class="logo-text" href="addChart.html">
                   <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"></path></svg>
-              <h6>Bag</h6>   
+                  <h6>Bag</h6>   
               </a>
               </li>
               <li>
