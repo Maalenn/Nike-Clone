@@ -6,12 +6,12 @@ const dataSources = {
 
 const ShoeSliderContainer = (shoeContents) =>{
     return `
-        <section class="scroll-main">
+        <section class="scroll-main mb-40">
             <div class="scroll-info container">
                 <div class="scroll-des">
                     <h1>SHOP BY CLASSICS</h1>
                 </div>
-                <div class="scroll-icon">
+                <div class="scroll-icon max-[767px]:hidden">
                     <button href="" class="link-arrow" onclick="pushArrow(-1)">
                         <div class="circle-icon icon-left">
                             <img src="../assets/Image/arrow-left.svg" alt="" />

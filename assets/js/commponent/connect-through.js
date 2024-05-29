@@ -7,7 +7,7 @@ const dataSources = {
 const ConnectedContainer = (connectedContents) => {
   return `
   <section class="flex justify-center ">
-    <section class="max-w-[91%] h-full">
+    <section class="max-w-[91%] h-full pb-20">
         <div class="scroll-des">
         <h1> Connect Throungh Membership </h1>
         </div> 
@@ -16,7 +16,7 @@ const ConnectedContainer = (connectedContents) => {
         <li class="py-[20px]">
             <a class="" href=""> 
                 <div class="">
-                <div class="bg-red-50">
+                <div>
                     <img src="${items.imgConnect}" alt="" />
                 </div>
                 <div class="text-center text-black flex flex-col gap-10 px-5">

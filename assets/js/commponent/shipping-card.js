@@ -12,20 +12,20 @@ const ShippingSliderContainer = (shippingContents) => {
                     <div class="scroll-des">
                     <h1>Member Benefits</h1>
                     </div>
-                    <div class="scroll-icon">
-                    <button href="" class="link-arrow" onclick="pushArrow(1,-1)">
-                        <div class="circle-icon icon-left">
-                        <img src="../assets/Image/arrow-left.svg" alt="" />
-                        </div>
-                    </button>
-                    <button href="" class="link-arrow" onclick="pushArrow(1,1)">
-                        <div class="circle-icon icon-right">
-                        <img src="../assets/Image/arrow-right.svg" alt="" />
-                        </div>
-                    </button>
+                    <div class="scroll-icon max-[767px]:hidden">
+                        <button href="" class="link-arrow" onclick="pushArrow(1,-1)">
+                            <div class="circle-icon icon-left">
+                            <img src="../assets/Image/arrow-left.svg" alt="" />
+                            </div>
+                        </button>
+                        <button href="" class="link-arrow" onclick="pushArrow(1,1)">
+                            <div class="circle-icon icon-right">
+                            <img src="../assets/Image/arrow-right.svg" alt="" />
+                            </div>
+                        </button>
                     </div>
                 </div>
-                <ul class="w-[100%] grid  grid-cols-[repeat(5,450px)] overflow-auto slideShow">
+                <ul class="w-[100%] grid  grid-cols-[repeat(${shippingContents.length},450px)] overflow-auto slideShow">
                     ${shippingContents.map(
                       (items) => `
                         <li class="py-[20px] slide-list">
