@@ -11,7 +11,7 @@ const ShoeSliderContainer = (shoeContents) =>{
                 <div class="scroll-des">
                     <h1>SHOP BY CLASSICS</h1>
                 </div>
-                <div class="scroll-icon">
+                <div class="scroll-icon max-[767px]:hidden">
                     <button href="" class="link-arrow" onclick="pushArrow(-1)">
                         <div class="circle-icon icon-left">
                             <img src="../assets/Image/arrow-left.svg" alt="" />

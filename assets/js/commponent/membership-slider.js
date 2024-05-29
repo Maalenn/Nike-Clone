@@ -42,4 +42,4 @@ class MemberShipSlider extends HTMLElement {
   }
 }
 
-customElements.define("membership-slidercomponent", MemberShipSlider);
+customElements.define("membership-slider-component", MemberShipSlider);
