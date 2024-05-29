@@ -16,7 +16,10 @@
   </head>
   <body>
     <!-- Start nav-bar -->
-    <div class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]" id="background-blur"></div>
+    <div
+      class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]"
+      id="background-blur"
+    ></div>
     <navbar-component> </navbar-component>
     <!-- End nav bar -->
 
@@ -68,96 +71,28 @@
         </section>
       </section>
       <!-- End New Arrival Section -->
-
     </section>
     <!-- End Feel Sculpted Section -->
 
     <!-- Start slider shoes -->
-    <shoe-slider-component data-source="slider-shoe-data"> </shoe-slider-component>
+    <shoe-slider-component data-source="slider-shoe-data">
+    </shoe-slider-component>
     <!-- End Silder shoes -->
 
     <!-- Start MemberShip show-->
     <section class="flex justify-center">
       <section class="max-w-[91%] h-full">
-          <div class="scroll-des">
-              <h1>Nike Membership</h1>
-          </div>
-        <membership-slider-component data-source="membership-data"> </membership-slider-component>
+        <div class="scroll-des">
+          <h1>Nike Membership</h1>
+        </div>
+        <membership-slider-component data-source="membership-data">
+        </membership-slider-component>
       </section>
-    </section>   
+    </section>
     <!-- End MemberShip show -->
 
     <!-- Section link above footer -->
-    <section class="above-footer container-above blur-background">
-      <ul class="above-menu">
-        <h5>Feature</h5>
-        <ul>
-          <li class="above-list">
-            <a href="">Air Force 1</a>
-          </li>
-          <li class="above-list">
-            <a href="">Jordan 1</a>
-          </li>
-          <li class="above-list">
-            <a href="">Metcon</a>
-          </li>
-          <li class="above-list">
-            <a href="">Air Max 270</a>
-          </li>
-        </ul>
-      </ul>
-      <ul class="above-menu">
-        <h5>Shoes</h5>
-        <ul>
-          <li class="above-list">
-            <a href="">All Shoes</a>
-          </li>
-          <li class="above-list">
-            <a href="">Jordan Shoes</a>
-          </li>
-          <li class="above-list">
-            <a href="">Running Shoes</a>
-          </li>
-          <li class="above-list">
-            <a href="">Basketball Shoes</a>
-          </li>
-        </ul>
-      </ul>
-      <ul class="above-menu">
-        <h5>Clothing</h5>
-        <ul>
-          <li class="above-list">
-            <a href="">All Clothing</a>
-          </li>
-          <li class="above-list">
-            <a href="">Tops & T-shirts</a>
-          </li>
-          <li class="above-list">
-            <a href="">Shorts</a>
-          </li>
-          <li class="above-list">
-            <a href="">Hoodies & Pollovers</a>
-          </li>
-        </ul>
-      </ul>
-      <ul class="above-menu">
-        <h5>Kids</h5>
-        <ul>
-          <li class="above-list">
-            <a href="">Infant & Toddler Shoes</a>
-          </li>
-          <li class="above-list">
-            <a href="">Kids Shoes</a>
-          </li>
-          <li class="above-list">
-            <a href="">Kids Basketball Shoes</a>
-          </li>
-          <li class="above-list">
-            <a href="">Kid Running Shoes</a>
-          </li>
-        </ul>
-      </ul>
-      </section>
+    <above-footer-component> </above-footer-component>
     <!-- End link above footer -->
 
     <!-- Start Footer Section -->
@@ -180,9 +115,19 @@
       src="../assets/js/commponent/feel-sculpted-card.js"
     ></script>
     <!-- Js shoe-slider component -->
-    <script type="module" src="../assets/js/commponent/shoe-slider-card.js"></script>
+    <script
+      type="module"
+      src="../assets/js/commponent/shoe-slider-card.js"
+    ></script>
     <!-- Js membership-slider component -->
-    <script type="module" src="../assets/js/commponent/membership-slider.js"></script>
+    <script
+      type="module"
+      src="../assets/js/commponent/membership-slider.js"
+    ></script>
     <script type="module" src="../assets/js/commponent/pushButton.js"></script>
+    <script
+      type="module"
+      src="../assets/js/commponent/above-footer.js"
+    ></script>
   </body>
 </html>
