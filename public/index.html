@@ -16,14 +16,11 @@
   </head>
   <body>
     <!-- Start nav-bar -->
-    <div
-      class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]"
-      id="background-blur"
-    ></div>
+    <div class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]" id="background-blur"></div>
     <navbar-component> </navbar-component>
     <!-- End nav bar -->
 
-    <!-- Cover Section -->
+    <!-- Satrt Feel Sculpted Section -->
     <section class="container-main">
       <section class="cover">
         <div class="container-show">
@@ -45,73 +42,49 @@
           </section>
         </a>
       </section>
-</head>
-<body>
-    <!-- Start nav-bar -->
-    <div class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]" id="background-blur"></div>
-    <navbar-component> </navbar-component>
 
-  <!-- Cover Section -->
-   <section class="container-main ">
-    <section class="cover">
-      <div class="container-show">
-        <img src="../assets/Image//cover.jpeg" alt="" />
-      </div>
-      <div class="container-show1">
-        <img src="../assets/Image/cover-break.jpeg" alt="" />
-      </div>
-      <a href="">
+      <!-- Start Feel Sculpted Section -->
+      <feel-component data-source="feel-data"> </feel-component>
+      <!-- End Feel Sculpted Section -->
+
+      <!-- Start New Arrival Section-->
+      <section class="feature-container">
         <section class="collection-info">
           <div class="cover-info">
-            <p>Nike Indy Bra</p>
-            <h1>FEEL SCULPTED</h1>
-            <p>
-              Light, medium, or high support for every mover & every body.
-            </p>
-            <button class="btn btn-shop">Shop</button>
+            <h1 style="font-size: 45px; font-weight: 900">NEW THIS WEEK</h1>
+            <div class="btn-show">
+              <button class="btn btn-shop">Shop Men's New Arrivals</button>
+              <button class="btn btn-shop">Shop Wonmen's New Arrivals</button>
+            </div>
           </div>
         </section>
-      </a>
-    </section>
-    <!-- End Cover Section -->
-
-    <!-- Start Feel Sculpted Section -->
-    <feel-component data-source="feel-data"> </feel-component>
-    <!-- End Feel Sculpted Section -->
-  <!-- Start Feel Sculpted Section -->
-  <feel-component data-source="feel-data"> </feel-component>
-
-    <!-- Start New Arrival Section-->
-    <section class="feature-container">
-      <section class="collection-info">
-        <div class="cover-info">
-          <h1 style="font-size: 45px; font-weight: 900">NEW THIS WEEK</h1>
-          <div class="btn-show">
-            <button class="btn btn-shop">Shop Men's New Arrivals</button>
-            <button class="btn btn-shop">Shop Wonmen's New Arrivals</button>
+        <section class="show-hero">
+          <div class="show-section">
+            <img src="../assets/Image/show1.jpeg" alt="" />
           </div>
-        </div>
+          <div class="show-section1">
+            <img src="../assets/Image/show2.jpeg" alt="" />
+          </div>
+        </section>
       </section>
-      <section class="show-hero">
-        <div class="show-section">
-          <img src="../assets/Image/show1.jpeg" alt="" />
-        </div>
-        <div class="show-section1">
-          <img src="../assets/Image/show2.jpeg" alt="" />
-        </div>
-      </section>
-    </section>
+      <!-- End New Arrival Section -->
 
-    <!-- End New Arrival Section -->
-  </section>
-  <!-- End Feel Sculpted Section -->
+    </section>
+    <!-- End Feel Sculpted Section -->
 
     <!-- Start slider shoes -->
     <shoe-slider-component data-source="slider-shoe-data"> </shoe-slider-component>
     <!-- End Silder shoes -->
 
     <!-- Start MemberShip show-->
-    <membership-slidercomponent data-source="membership-data"> </membership-slidercomponent>
+    <section class="flex justify-center">
+      <section class="max-w-[91%] h-full">
+        <div class="scroll-des">
+            <h1>Nike Membership</h1>
+        </div>
+        <membership-slidercomponent data-source="membership-data"> </membership-slidercomponent>
+      </section>
+    </section>   
     <!-- End MemberShip show -->
 
     <!-- Section link above footer -->
@@ -184,7 +157,7 @@
           </li>
         </ul>
       </ul>
-    </section>
+      </section>
     <!-- End link above footer -->
 
     <!-- Start Footer Section -->

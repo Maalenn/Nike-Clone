@@ -6,7 +6,7 @@ const dataSources = {
 
 const ShoeSliderContainer = (shoeContents) =>{
     return `
-        <section class="scroll-main">
+        <section class="scroll-main mb-40">
             <div class="scroll-info container">
                 <div class="scroll-des">
                     <h1>SHOP BY CLASSICS</h1>
