@@ -1,65 +1,136 @@
-# NIKE Clone project details
+# KhunMalen Nike Clone
 
-Here is the link to check **the details** of the **NIKE Clone** Website Project : https://nasal-clavicle-f22.notion.site/Nike-Cloning-Project-d4e724a75f7f40ef9cc67419f2eca1dc
+Welcome to the KhunMalen Nike Clone project! This project aims to replicate the design and functionality of a Nike website, providing a learning platform for web development and design.
 
-Checkout the **Website after deploy** : https://nike-clone.000webhostapp.com/index.html
+## Table of Contents
 
-## Project Setup & Installation
-  1. Prerequisites:
-      + Git installed: Ensure you have Git installed on your system. You can check by running git --version in your terminal. If not installed, download it from 
-          https://git-scm.com/downloads.
-      + Node.js and npm installed: Node.js is required for npm, the package manager used in this project. Download and install the latest LTS (Long-Term Support) version from        https://nodejs.org/en.
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Branching Strategy](#branching-strategy)
+- [Contributing](#contributing)
+- [License](#license)
 
-  2. Steps:
-      + Clone the Repository:
-        - Open a terminal or command prompt and navigate to the directory where you want to clone the project.
-        - Use the git clone command followed by the URL of the remote repository you cloned from (e.g., GitHub, GitLab):
-      + Install Dependencies:
-        - Navigate to the cloned project directory
-        - Since node_modules is likely excluded in the .gitignore file, you'll need to reinstall the project's dependencies using npm:
-          npm install
-        - This command downloads and installs all the necessary packages listed in the package.json file, including Tailwind CSS and any other project dependencies.
+## Project Overview
 
-      + Run/Build the project
-        - If your project uses a build process to optimize and compile assets (usually for production environments), check the package.json file for a script named build or similar. If present, run: 
-          npm run build
-      + View the Website:
-        - Open the index.html file in your text editor or code editor.
-        - Right-click on the index.html file and select "Open with" or "Open in Browser" (depending on your operating system).
+The KhunMalen Nike Clone is a web application built with modern web technologies. It aims to mimic the design and functionality of the official Nike website, including product displays, user interactions, and responsive design.
 
-## Project Folder Structure
-```bash
-├── assets
-│ ├── component
-│ │ ├── cardsCarousel-compo.js
-│ │ ├── cardsStore-compo.js
-│ │ ├── component.js
-│ │ ├── membershipCarousel-compo.js
-│ │ └── momCards-compo.js
-│ ├── data
-│ │ ├── cardsCarousel-data.js
-│ │ ├── cardsStore-data.js
-│ │ ├── membershipCarousel-data.js
-│ ├── fifth-page.js
-│ ├── forthPage.js
-│ ├── homePage.js
-│ └── sixth-page.js
-├── Images
-├── node_modules
-├── public
-│ ├── fifth-page.html
-│ ├── forth-page.html
-│ ├── index.html
-│ ├── second-page.html
-│ ├── sixth-page.html
-│ └── third-page.html
-├── src
-│ ├── style.css
-│ └── tw-style.css
+
+## Features
+
+- **Home Page:** A replica of the Nike homepage.
+- **Product Listings:** Display of products with details.
+- **User Interactions:** Interactive elements such as buttons and forms.
+- **Responsive Design:** Ensuring the site is usable on various devices.
+- **Member Benefits:** Information about member benefits with a slideshow feature.
+
+## Project Structure
+
+```plaintext
+KhunMalen-Nike-Clone/
+├── assets/
+│   ├── css/
+│   ├── Image/
+│   ├── js/
+│   │   ├── component/
+│   │   ├── data/
+│   │   ├── addChart.js
+│   │   ├── index.js
+│   │   ├── joinUs.js
+│   │   └── main.js
+│   └── Video/
+├── fresh_clone/
+├── node_modules/
+├── public/
+│   ├── addChart.html
+│   ├── index.html
+│   ├── joinUs.html
+│   └── new-feature.html
+├── src/
 ├── .gitignore
 ├── .reviewboardrc
 ├── package-lock.json
 ├── package.json
 ├── README.md
-└── tailwind.config.js
-```
+└── tailwind.config.js 
+
+## Installation
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://git.clp.kr/anbschool/2nd/tech-a/khun-malen/khunmalen-nike-clone.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd khunmalen-nike-clone
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Run the development server:**
+
+    ```bash
+    npm start
+    ```
+
+    The project should now be running on `http://localhost:3000`.
+
+## Usage
+
+### Git Flow for Feature Development
+
+1. **Start a new feature:**
+
+    ```bash
+    git flow feature start 'your-feature-name'
+    ```
+
+2. **Work on your feature and commit changes:**
+
+    ```bash
+    git add .
+    git commit -m "Add description of your changes"
+    ```
+
+3. **Publish your feature branch:**
+
+    ```bash
+    git flow feature publish 'your-feature-name'
+    ```
+
+4. **Finish your feature and merge it into develop:**
+
+    ```bash
+    git flow feature finish 'your-feature-name'
+    ```
+
+## Branching Strategy
+
+We use Git Flow as our branching strategy. The main branches are:
+
+- `main`: The production branch.
+- `develop`: The development branch where features are integrated.
+- `feature/*`: Feature branches derived from `develop`.
+- `release/*`: Release preparation branches derived from `develop`.
+- `hotfix/*`: Hotfix branches derived from `main`.
+
+## Contributing
+
+We welcome contributions to the project! If you have any ideas, suggestions, or bug reports, please create an issue or submit a pull request. Make sure to follow our branching strategy and code style guidelines.
+
+### Setting Up Git Username and Email
+
+Ensure your Git username and email are set up correctly:
+
+```bash
+git config --global user.name "Malen"
+git config --global user.email "malen8622@gmail.com"
