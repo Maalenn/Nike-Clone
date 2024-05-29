@@ -168,4 +168,4 @@ class SideBarTop extends HTMLElement{
     }
 }
 
-customElements.define("sidebar-top", SideBarTop)
+customElements.define("sidebar-top-component", SideBarTop)
