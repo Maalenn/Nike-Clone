@@ -1,3 +1,4 @@
+// function for sccroll bar
 var prevScrollpos = window.scrollY;
 window.onscroll = function() {
   var currentScrollPos = window.scrollY;
@@ -12,6 +13,8 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 };
+
+//Function for slider
 let currentSlide = [];
 
 function pushArrow(carouselIndex, n) {
@@ -29,16 +32,31 @@ function pushArrow(carouselIndex, n) {
   carousel.scrollTo({ left: currentSlide[carouselIndex] * imageWidth, behavior: "smooth" });
 }
 
+// Function for open nav
 function openNav() {
   document.querySelector(".nav-hamburger").classList.add("openNavBar");
   document.querySelector(".nav-hamburger").classList.remove("closeNavBar");
   document.querySelector("html").classList.add("overflow-y-hidden")
   document.getElementById('background-blur').classList.remove('hidden');
 }
+// Function for close nav
 function closeNav() {
   document.querySelector(".nav-hamburger").classList.add("closeNavBar");
   document.querySelector(".nav-hamburger").classList.remove("openNavBar");
   document.querySelector("html").classList.remove("overflow-y-hidden")
   document.getElementById('background-blur').classList.add('hidden');
 }
+
+// function for dropdown
+let accordionBtn = document.querySelectorAll("#accordion-btn");
+let accordionDropdown = document.querySelectorAll("#accordion-dropdown");
+let plusIcon = document.querySelectorAll("#plus-icon");
+let closeIcon = document.querySelectorAll("#close-icon");
+accordionBtn.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    accordionDropdown[i].classList.toggle("max-h-[300px]");
+    plusIcon[i].classList.toggle("hidden");
+    closeIcon[i].classList.toggle("hidden");
+  });
+});
 
