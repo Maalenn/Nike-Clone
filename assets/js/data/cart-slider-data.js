@@ -63,7 +63,7 @@ export const cartSliderData = [
         cartPrice: "$50"
     },
     {
-        cartImg: "../assets/Image/ii0.png",
+        cartImg: "../assets/Image/i10.png",
         cartTitle: "Sustainable Materials",
         cartDetail: "Nike Indy Light Support",
         cartDes: "Women's Padded Adjustble Sport Bra 3 Color",
