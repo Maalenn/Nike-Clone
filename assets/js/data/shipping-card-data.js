@@ -1,4 +1,4 @@
-export const shippingData = [
+export const ShippingData = [
     {
         imgShip: "../assets/Image/shipping.jpg",
         titleShip: "Free Shipping",

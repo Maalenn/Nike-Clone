@@ -1,4 +1,4 @@
-export const shoeSliderData = [
+export const ShoeSliderData = [
     "../assets/Image/shoe1.jpeg",
     " ../assets/Image/shoe2.jpeg",
     " ../assets/Image/shoe3.jpeg",

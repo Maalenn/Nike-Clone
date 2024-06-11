@@ -1,4 +1,4 @@
-export const fqaData = [
+export const FqaData = [
     {
         titleFqa: "What is Nike Membership?",
         desFqa: "Nike Membership is access to the very best of Nike through any of our apps, exclusive products, and Member-only experiences. Nike Members also enjoy free shipping on orders of $50 or more, 60-day Wear Test, and receipt-less returns. It’s free and easy to join. "

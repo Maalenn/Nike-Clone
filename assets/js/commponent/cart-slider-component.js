@@ -1,8 +1,8 @@
-import {cartSliderData} from '../data/cart-slider-data.js'
+import {CartSliderData} from '../data/cart-slider-data.js'
 
 const dataSources =
 {
-    "cart-slider-data": cartSliderData
+    "cart-slider-data": CartSliderData
 }
 
 const CartSliderContainer = (cartContents) =>{

@@ -1,4 +1,4 @@
-export const cartSliderData = [
+export const CartSliderData = [
     {
         cartImg: "../assets/Image/i1.png",
         cartTitle: "Sustainable Materials",

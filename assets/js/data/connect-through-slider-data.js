@@ -1,4 +1,4 @@
-export const connectData = [
+export const ConnectData = [
     {
         imgConnect: "../assets/Image/c1.png",
         titleConnect: "Nike App",

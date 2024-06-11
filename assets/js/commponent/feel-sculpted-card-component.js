@@ -1,7 +1,7 @@
-import {feelSculpted} from '../data/feel-sculpted-data.js'
+import {FeelSculpted} from '../data/feel-sculpted-data.js'
 
 const dataSources = {
-    'feel-data': feelSculpted
+    'feel-data': FeelSculpted
 }
 
 const FeelContainer = (feelContents) =>{
