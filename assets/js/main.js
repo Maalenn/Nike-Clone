@@ -10,10 +10,6 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-const slideShow = function () {
-  document.query;
-};
-
 // Nav hamburger when click on hammbeuger icon
 function openNav() {
   document.querySelector(".navBar-breakpoint").classList.add("openNavBar");
