@@ -14,12 +14,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="h-[200vh]">
-     <!-- Start nav-bar -->
-      <div class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]" id="background-blur"></div>
-      <navbar-component> </navbar-component>
-     <!-- End nav-bar -->
-    
-   
+
+    <!-- Start nav-bar -->
+    <div class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]" id="background-blur"></div>
+    <navbar-component> </navbar-component>
+    <!-- End nav-bar -->
+
+    <!-- Start Side Bar & Card -->
     <section class="max-w-[1650px] mx-auto max-md:mt-36 mt-40">
       <!-- Start Side bar Top -->
       <sidebar-top-component> </sidebar-top-component>
@@ -27,7 +28,7 @@
 
       <!-- Start side bar left -->
       <article class="flex  top-[60px] left-0">
-        <!-- Start sidebarLeft -->
+        <!-- Start sidebar-left -->
         <sidebar-left-component> </sidebar-left-component>
         <!-- End sidebarLeft -->
         <newfeature-card-component data-source="new-feature-data"> </newfeature-card-component>
@@ -38,11 +39,17 @@
     <!-- Start Footer Section -->
     <footer-component> </footer-component>
     <!-- End footer -->
+
     <script src="../assets/js/main.js"></script>
+    <!-- JS nav bar component -->
     <script type="module" src="../assets/js/commponent/homepage-navbar.js"></script>
+    <!-- JS footer component -->
     <script type="module" src="../assets/js/commponent/footer.js"></script>
-    <script type="module" src="../assets/js/commponent/sidebarLeft.js"></script>
-    <script type="module" src="../assets/js/commponent/sidebarTop.js"></script>
+    <!-- JS sidebar-left component -->
+    <script type="module" src="../assets/js/commponent/sidebar-left.js"></script>
+    <!-- JS sidebar-top component -->
+    <script type="module" src="../assets/js/commponent/sidebar-top.js"></script>
+    <!-- JS feature card component -->
     <script type="module" src="../assets/js/commponent/feature-card.js"></script>
   </body>
   
