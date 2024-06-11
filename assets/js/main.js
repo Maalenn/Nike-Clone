@@ -1,4 +1,4 @@
-// function for scroll in nav bar
+// Function for scroll in nav bar
 var prevScrollpos = window.scrollY;
 window.onscroll = function () {
   var currentScrollPos = window.scrollY;
@@ -17,7 +17,7 @@ function openNavBarBreakpoint() {
   document.querySelector("html").classList.add("overflow-y-hidden");
   document.getElementById("background-blur").classList.remove("hidden");
 }
-// nav Hamburger when close
+// Nav Hamburger when close
 function closeNavBarBreakpoint() {
   document.querySelector(".navBar-breakpoint").classList.add("closeNavBar");
   document.querySelector(".navBar-breakpoint").classList.remove("openNavBar");
@@ -48,7 +48,7 @@ function pushArrow(carouselIndex, n) {
   });
 }
 
-//function for dropdown
+//Function for dropdown
 let accordionBtn = document.querySelectorAll("#accordion-btn");
 let accordionDropdown = document.querySelectorAll("#accordion-dropdown");
 let plusIcon = document.querySelectorAll("#plus-icon");
