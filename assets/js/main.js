@@ -14,15 +14,15 @@ window.onscroll = function () {
 function openNavBarBreakpoint() {
   document.querySelector(".navBar-breakpoint").classList.add("openNavBar");
   document.querySelector(".navBar-breakpoint").classList.remove("closeNavBar");
-  document.querySelector("html").classList.add("overflow-y-hidden")
-  document.getElementById('background-blur').classList.remove('hidden');
+  document.querySelector("html").classList.add("overflow-y-hidden");
+  document.getElementById("background-blur").classList.remove("hidden");
 }
 // nav Hamburger when close
 function closeNavBarBreakpoint() {
   document.querySelector(".navBar-breakpoint").classList.add("closeNavBar");
   document.querySelector(".navBar-breakpoint").classList.remove("openNavBar");
-  document.querySelector("html").classList.remove("overflow-y-hidden")
-  document.getElementById('background-blur').classList.add('hidden');
+  document.querySelector("html").classList.remove("overflow-y-hidden");
+  document.getElementById("background-blur").classList.add("hidden");
 }
 //Function for slider
 let currentSlide = [];
@@ -38,8 +38,14 @@ function pushArrow(carouselIndex, n) {
   const images = carousel.querySelectorAll(".slide-list");
   const imageWidth = images[0].clientWidth;
 
-  currentSlide[carouselIndex] = Math.max(0, Math.min(currentSlide[carouselIndex] + n, images.length - 1));
-  carousel.scrollTo({ left: currentSlide[carouselIndex] * imageWidth, behavior: "smooth" });
+  currentSlide[carouselIndex] = Math.max(
+    0,
+    Math.min(currentSlide[carouselIndex] + n, images.length - 1)
+  );
+  carousel.scrollTo({
+    left: currentSlide[carouselIndex] * imageWidth,
+    behavior: "smooth",
+  });
 }
 
 //function for dropdown
