@@ -1,4 +1,4 @@
-import {ConnectData} from "../data/connect-through-slider-data.js";
+import {ConnectData } from "../data/connect-through-slider-data.js";
 
 const dataSources = {
   "connect-data": ConnectData,
@@ -12,7 +12,9 @@ const ConnectedContainer = (connectedContents) => {
         <h1> Connect Throungh Membership </h1>
         </div> 
         <ul class="w-[100%] grid grid-cols-4 max-[960px]:grid-cols-2 max-[600px]:grid-cols-1 container">
-          ${connectedContents.map((items)=>`
+          ${connectedContents
+            .map(
+              (items) => `
           <li class="py-[20px]">
               <a class="" href=""> 
                   <div class="">
@@ -27,7 +29,9 @@ const ConnectedContainer = (connectedContents) => {
                   </div>
               </a>
           </li>
-          `).join("")}
+          `
+            )
+            .join("")}
         </ul>
         </section>
     </section>
