@@ -1,7 +1,7 @@
-import {fqaData} from '../data/fqa-data.js'
+import {FqaData} from '../data/fqa-data.js'
 
 const dataSources = {
-    "fqa-section-data": fqaData
+    "fqa-section-data": FqaData
 }
 
 const FqaContainer = (fqaContents) =>{

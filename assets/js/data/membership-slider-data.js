@@ -1,4 +1,4 @@
-export const membershipData = [
+export const MembershipData = [
     {
         imgMember: "../assets/Image/up1.jpeg",
         titleMember: "Member Product",
@@ -19,7 +19,7 @@ export const membershipData = [
     }
 ]
 
-export const benefitData = [
+export const BenefitData = [
     {
         imgMember: "../assets/Image/up1.jpeg",
         titleMember: "Member Product",

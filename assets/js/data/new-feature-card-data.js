@@ -1,4 +1,4 @@
-export const newFeatureData = [
+export const NewFeatureData = [
     {
         productImg: "../assets/Image/w1.png",
         productTitle: "Sustainable Materials",

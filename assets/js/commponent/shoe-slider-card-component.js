@@ -1,7 +1,7 @@
-import {shoeSliderData} from '../data/shoe-slider-data.js'
+import {ShoeSliderData} from '../data/shoe-slider-data.js'
 
 const dataSources = {
-    "slider-shoe-data": shoeSliderData
+    "slider-shoe-data": ShoeSliderData
 }
 
 const ShoeSliderContainer = (shoeContents) =>{

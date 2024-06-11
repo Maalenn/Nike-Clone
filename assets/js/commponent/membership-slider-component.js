@@ -1,8 +1,8 @@
-import {membershipData,benefitData} from '../data/membership-slider-data.js'
+import {MembershipData,BenefitData} from '../data/membership-slider-data.js'
 
 const dataSources = {
-    "membership-data": membershipData,
-    "benefit-data": benefitData
+    "membership-data": MembershipData,
+    "benefit-data": BenefitData
 }
 
 const MembershipContainer = (memberContents) =>{

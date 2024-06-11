@@ -1,4 +1,4 @@
-export const feelSculpted = [
+export const FeelSculpted = [
     {
         imgFeel: "../assets/Image/feel1.jpeg",
         titleFeel: "Mother's Day",
