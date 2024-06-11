@@ -11,14 +11,14 @@ window.onscroll = function () {
 };
 
 // Nav hamburger when click on hammbeuger icon
-function openNav() {
+function openNavBarBreakpoint() {
   document.querySelector(".navBar-breakpoint").classList.add("openNavBar");
   document.querySelector(".navBar-breakpoint").classList.remove("closeNavBar");
   document.querySelector("html").classList.add("overflow-y-hidden")
   document.getElementById('background-blur').classList.remove('hidden');
 }
 // nav Hamburger when close
-function closeNav() {
+function closeNavBarBreakpoint() {
   document.querySelector(".navBar-breakpoint").classList.add("closeNavBar");
   document.querySelector(".navBar-breakpoint").classList.remove("openNavBar");
   document.querySelector("html").classList.remove("overflow-y-hidden")
