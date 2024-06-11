@@ -1,4 +1,4 @@
-import {membershipData,benefitData} from '../data/membership-data.js'
+import {membershipData,benefitData} from '../data/membership-slider-data.js'
 
 const dataSources = {
     "membership-data": membershipData,

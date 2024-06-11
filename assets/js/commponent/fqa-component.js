@@ -13,10 +13,10 @@ const FqaContainer = (fqaContents) =>{
                 <li class=" flex flex-col pt-5 py-2 border-[#d6d6d6] border-b-[1px] gap-3">
                     <div id="accordion-btn" class="flex justify-between ">
                         <a class="text-[22px]" href="">${items.titleFqa}</a>
-                        <div id="plus-icon">
+                        <div id="plus-icon" class="hidden">
                             <svg class=" fill-black " xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/></svg>
                         </div>
-                        <div id="close-icon" class="hidden">
+                        <div id="close-icon" >
                             <svg class=" fill-black " xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"></path></svg>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import {shippingData} from "../data/shipping-data.js";
+import {shippingData} from "../data/shipping-card-data.js";
 
 const dataSources = {
   "shipping-data": shippingData,
