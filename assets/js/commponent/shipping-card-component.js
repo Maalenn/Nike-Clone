@@ -1,7 +1,7 @@
-import { shippingData } from "../data/shipping-card-data.js";
+import { ShippingData } from "../data/shipping-card-data.js";
 
 const dataSources = {
-  "shipping-data": shippingData,
+  "shipping-data": ShippingData,
 };
 
 const ShippingSliderContainer = (shippingContents) => {
