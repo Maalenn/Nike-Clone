@@ -457,7 +457,7 @@ const NavBarContainer = () =>{
             </li>
             
           </ul>
-          <ul class="nav-hamburger overflow-y-auto">
+          <ul class="navBar-breakpoint overflow-y-auto">
             <li>
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <i class="fa-solid fa-x"></i> </a>
             </li>

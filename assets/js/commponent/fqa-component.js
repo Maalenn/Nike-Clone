@@ -4,7 +4,7 @@ const dataSources = {
     "fqa-section-data": fqaData
 }
 
-const fqaContainer = (fqaContents) =>{
+const FqaContainer = (fqaContents) =>{
     return `
     <section class="p-20">
         <h1 class="text-[30px] mb-20">Frequently Asked Questions</h1>
@@ -36,13 +36,13 @@ class FQA extends HTMLElement {
   connectedCallback() {
     const dataSource = this.getAttribute("data-source");
     const data = dataSources[dataSource];
-    this.innerHTML = fqaContainer(data);
+    this.innerHTML = FqaContainer(data);
   }
 }
 
 customElements.define("fqa-component", FQA);
 
-// function arrow drop and up
+//function for dropdown
 let accordionBtn = document.querySelectorAll("#accordion-btn");
 let accordionDropdown = document.querySelectorAll("#accordion-dropdown");
 let plusIcon = document.querySelectorAll("#plus-icon");

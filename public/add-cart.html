@@ -303,15 +303,27 @@
     <!-- End Shopping checkout -->
 
     <!-- Start Product slider section -->
-    <cart-slider-component data-source="cart-slider-data"> </cart-slider-component>
+    <section class="flex justify-center">
+      <section class="max-w-[55.5%] max-lg:max-w-[80%] h-full">
+          <div class="scroll-info container">
+              <div class="">
+                  <h1 class="text-[30px]">You Might Also link</h1>
+              </div>
+              <!-- push botton to make slider move -->
+              <push-btn-component> </push-btn-component>
+            </div>
+            <cart-slider-component data-source="cart-slider-data"> </cart-slider-component>
+          </section>
+      </section>
+    
     <!-- End Product slider section -->
 
     <!-- Start Footer Section -->
     <footer-component> </footer-component>
     <!-- End Footer Section -->
 
-    <!-- Link Javascript for add-cart.js-->
-    <script src="../assets/js/add-cart.js"></script>
+    <!-- <script src="../assets/js/add-cart.js"></script> -->
+    <script src="../assets/js/main.js"></script>
 
     <!-- JS nav bar component -->
     <script type="module" src="../assets/js/commponent/homepage-navbar.js"> </script>
@@ -319,5 +331,7 @@
     <script type="module" src="../assets/js/commponent/footer.js"></script>
     <!-- JS card-slider component -->
     <script type="module" src="../assets/js/commponent/cart-slider.js"></script>
+    <!-- JS push button slider movement functionality -->
+    <script type="module" src="../assets/js/commponent/push-button.js"></script>
   </body>
 </html>

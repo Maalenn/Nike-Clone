@@ -293,7 +293,7 @@ input:focus {
 }
 
 /* Nav bar hamburger */
-.nav-hamburger {
+.navBar-breakpoint {
   width: 300px;
   background-color: white;
   height: 100vh;
@@ -310,25 +310,25 @@ input:focus {
   -o-transition: all 0.25s ease;
   transform: translateX(100%);
 }
-.nav-hamburger > :nth-child(1) {
+.navBar-breakpoint > :nth-child(1) {
   justify-content: end;
 }
-.nav-hamburger > :nth-child(1) a > i {
+.navBar-breakpoint > :nth-child(1) a > i {
   font-size: 2rem;
 }
-.nav-hamburger > li > a {
+.navBar-breakpoint > li > a {
   color: rgb(7, 8, 8);
   font-size: 2.3rem;
 }
-.nav-hamburger > li > a {
+.navBar-breakpoint > li > a {
   color: rgb(7, 8, 8);
   font-size: 2.3rem;
 }
-.nav-hamburger > li {
+.navBar-breakpoint > li {
   display: flex;
   justify-content: space-between;
 }
-.nav-hamburger > li > :nth-child(2) {
+.navBar-breakpoint > li > :nth-child(2) {
   color: rgb(7, 8, 8);
   font-size: 1.7rem;
 }

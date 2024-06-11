@@ -1,4 +1,4 @@
-const pushContainer = () =>{
+const PushContainer = () =>{
     return `
         <div class="scroll-icon max-[767px]:hidden">
             <button class="link-arrow" onclick="pushArrow(0,-1)">
@@ -17,7 +17,7 @@ const pushContainer = () =>{
 
 class PushBtn extends HTMLElement{
     connectedCallback(){
-        this.innerHTML = pushContainer();
+        this.innerHTML = PushContainer();
     }
 }
 
