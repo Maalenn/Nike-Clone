@@ -1,5 +1,5 @@
-const SideLeftContainer = () =>{
-    return `
+const SideLeftContainer = () => {
+  return `
     <section class="w-[100%]">
         <div>
             <div class="px-20">
@@ -158,13 +158,13 @@ const SideLeftContainer = () =>{
             </ul>
             </section>
         </section>
-    `
+    `;
+};
+
+class SideBarTop extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = SideLeftContainer();
+  }
 }
 
-class SideBarTop extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML = SideLeftContainer();
-    }
-}
-
-customElements.define("sidebar-top-component", SideBarTop)
+customElements.define("sidebar-top-component", SideBarTop);

@@ -1,4 +1,4 @@
-import {shippingData} from "../data/shipping-card-data.js";
+import { shippingData } from "../data/shipping-card-data.js";
 
 const dataSources = {
   "shipping-data": shippingData,
@@ -25,9 +25,12 @@ const ShippingSliderContainer = (shippingContents) => {
                         </button>
                     </div>
                 </div>
-                <ul class="w-[100%] grid  grid-cols-[repeat(${shippingContents.length},450px)] overflow-auto slideShow container">
-                    ${shippingContents.map(
-                      (items) => `
+                <ul class="w-[100%] grid  grid-cols-[repeat(${
+                  shippingContents.length
+                },450px)] overflow-auto slideShow container">
+                    ${shippingContents
+                      .map(
+                        (items) => `
                         <li class="py-[20px] slide-list">
                             <a class="" href=""> 
                                 <div class="">
@@ -44,7 +47,8 @@ const ShippingSliderContainer = (shippingContents) => {
                             </a>
                         </li>
                     `
-                    ).join("")}
+                      )
+                      .join("")}
                 </ul>
             </section>
         </section>

@@ -1,5 +1,5 @@
-const NavBarContainer = () =>{
-    return ` 
+const NavBarContainer = () => {
+  return ` 
     <nav class="nav-bar">
       <section class="container-top">
         <nav class="nav-top container">
@@ -554,13 +554,13 @@ const NavBarContainer = () =>{
         </nav>
       </section>
     </nav>
-    `
+    `;
+};
+
+class NavBar extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = NavBarContainer();
+  }
 }
 
-class NavBar extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML = NavBarContainer();
-    }
-}
-
-customElements.define("navbar-component", NavBar)
+customElements.define("navbar-component", NavBar);

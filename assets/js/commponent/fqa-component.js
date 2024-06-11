@@ -1,15 +1,17 @@
-import {FqaData} from '../data/fqa-data.js'
+import { FqaData } from "../data/fqa-data.js";
 
 const dataSources = {
-    "fqa-section-data": FqaData
-}
+  "fqa-section-data": FqaData,
+};
 
-const FqaContainer = (fqaContents) =>{
-    return `
+const FqaContainer = (fqaContents) => {
+  return `
     <section class="p-20">
         <h1 class="text-[30px] mb-20">Frequently Asked Questions</h1>
         <ul class="flex flex-col gap-5">
-            ${fqaContents.map(items => `
+            ${fqaContents
+              .map(
+                (items) => `
                 <li class=" flex flex-col pt-5 py-2 border-[#d6d6d6] border-b-[1px] gap-3">
                     <div id="accordion-btn" class="flex justify-between ">
                         <a class="text-[22px]" href="">${items.titleFqa}</a>
@@ -26,11 +28,13 @@ const FqaContainer = (fqaContents) =>{
                     </p>
                     </section>
                 </li>
-        `).join("")}
+        `
+              )
+              .join("")}
         </ul>
     </section>
-    `
-}
+    `;
+};
 
 class FQA extends HTMLElement {
   connectedCallback() {
@@ -54,6 +58,3 @@ accordionBtn.forEach((btn, i) => {
     closeIcon[i].classList.toggle("hidden");
   });
 });
-            
-            
-          

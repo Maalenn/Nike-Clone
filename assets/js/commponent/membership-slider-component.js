@@ -2,7 +2,7 @@ import {MembershipData,BenefitData} from '../data/membership-slider-data.js'
 
 const dataSources = {
     "membership-data": MembershipData,
-    "benefit-data": BenefitData
+    "benefit-data": enefitData
 }
 
 const MembershipContainer = (memberContents) =>{
