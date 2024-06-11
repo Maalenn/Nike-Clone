@@ -16,15 +16,15 @@ const slideShow = function () {
 
 // Nav hamburger when click on hammbeuger icon
 function openNav() {
-  document.querySelector(".nav-hamburger").classList.add("openNavBar");
-  document.querySelector(".nav-hamburger").classList.remove("closeNavBar");
+  document.querySelector(".navBar-breakpoint").classList.add("openNavBar");
+  document.querySelector(".navBar-breakpoint").classList.remove("closeNavBar");
   document.querySelector("html").classList.add("overflow-y-hidden")
   document.getElementById('background-blur').classList.remove('hidden');
 }
 // nav Hamburger when close
 function closeNav() {
-  document.querySelector(".nav-hamburger").classList.add("closeNavBar");
-  document.querySelector(".nav-hamburger").classList.remove("openNavBar");
+  document.querySelector(".navBar-breakpoint").classList.add("closeNavBar");
+  document.querySelector(".navBar-breakpoint").classList.remove("openNavBar");
   document.querySelector("html").classList.remove("overflow-y-hidden")
   document.getElementById('background-blur').classList.add('hidden');
 }

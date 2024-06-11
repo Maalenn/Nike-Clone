@@ -1,4 +1,4 @@
-import {newFeatureData} from "../data/newFeature-data.js";
+import {newFeatureData} from "../data/new-feature-card-data.js";
 
 const dataSources = {
   "new-feature-data": newFeatureData,
