@@ -16,10 +16,7 @@
   </head>
   <body>
     <!-- Start nav-bar -->
-    <div
-      class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]"
-      id="background-blur"
-    ></div>
+    <div class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]" id="background-blur"></div>
     <navbar-component> </navbar-component>
     <!-- End nav-bar -->
 
@@ -305,259 +302,36 @@
     </section>
     <!-- End Shopping checkout -->
 
-    <!-- Start Shopping Slider -->
-
     <!-- Start Product slider section -->
-    <cart-slider-component data-source="cart-slider-data">
-    </cart-slider-component>
-    <!-- <section class="flex justify-center">
+    <section class="flex justify-center">
       <section class="max-w-[55.5%] max-lg:max-w-[80%] h-full">
-        <div class="scroll-info container">
-          <div class="">
-            <h1 class="text-[30px]">You Might Also link</h1>
-          </div>
-          <div class="scroll-icon">
-            <button href="" class="link-arrow" onclick="pushArrow(-1)">
-              <div class="circle-icon icon-left">
-                <img src="../assets/Image/arrow-left.svg" alt="" />
+          <div class="scroll-info container">
+              <div class="">
+                  <h1 class="text-[30px]">You Might Also link</h1>
               </div>
-            </button>
-            <button href="" class="link-arrow" onclick="pushArrow(1)">
-              <div class="circle-icon icon-right">
-                <img src="../assets/Image/arrow-right.svg" alt="" />
-              </div>
-            </button>
-          </div>
-        </div>
-        <ul
-          class="w-[100%] max-max-[1400px] grid grid-cols-[repeat(11,500px)] max-lg:grid-cols-[repeat(11,300px)] overflow-auto slideShow"
-        >
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i1.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#3e3c36] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i2.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#b5b1a9] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i3.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#b5b1a9] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i4.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#b5b1a9] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i5.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#b5b1a9] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i6.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#b5b1a9] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i7.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#b5b1a9] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i8.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#b5b1a9] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i9.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#b5b1a9] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i10.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#b5b1a9] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="py-[20px] slide-list px-2">
-            <a class="" href="">
-              <figure class="">
-                <img src="../assets/Image/i10.png" alt="" />
-                <div class="flex flex-col max-w-[270px] gap-2 p-4">
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    Nike Invincible 3
-                  </h3>
-                  <h3 class="text-[#b5b1a9] text-[16px] tracking-wide">
-                    Men's Road Running Shoes
-                  </h3>
-                  <h3 class="text-[#000000] text-[16px] tracking-wide">
-                    $180.00
-                  </h3>
-                  <p>$40</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-        </ul>
+              <!-- push botton to make slider move -->
+              <push-btn-component> </push-btn-component>
+            </div>
+            <cart-slider-component data-source="cart-slider-data"> </cart-slider-component>
+          </section>
       </section>
-    </section> -->
-
+    
     <!-- End Product slider section -->
 
     <!-- Start Footer Section -->
     <footer-component> </footer-component>
     <!-- End Footer Section -->
 
-    <!-- Link Javascript -->
-    <script src="../assets/js/addChart.js"></script>
-    <script
-      type="module"
-      src="../assets/js/commponent/homepage-navbar.js"
-    ></script>
-    <script type="module" src="../assets/js/commponent/footer.js"></script>
-    <script type="module" src="../assets/js/commponent/cart-slider.js"></script>
+    <!-- <script src="../assets/js/add-cart.js"></script> -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- JS nav bar component -->
+    <script type="module" src="../assets/js/commponent/navbar-component.js"> </script>
+    <!-- JS footer component -->
+    <script type="module" src="../assets/js/commponent/footer-component.js"></script>
+    <!-- JS card-slider component -->
+    <script type="module" src="../assets/js/commponent/cart-slider-component.js"></script>
+    <!-- JS push button slider movement functionality -->
+    <script type="module" src="../assets/js/commponent/push-button-component.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Nike.com</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="../assets/css/homePage.css" />
-    <link rel="stylesheet" href="../src/input.css">
+    <link rel="stylesheet" href="../src/input.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -14,23 +14,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="h-[200vh]">
-     <!-- Start nav-bar -->
-      <div class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]" id="background-blur"></div>
-      <navbar-component> </navbar-component>
-     <!-- End nav-bar -->
-    
-   
+    <!-- Start nav-bar -->
+    <div
+      class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]"
+      id="background-blur"
+    ></div>
+    <navbar-component> </navbar-component>
+    <!-- End nav-bar -->
+
+    <!-- Start Side Bar & Card -->
     <section class="max-w-[1650px] mx-auto max-md:mt-36 mt-40">
       <!-- Start Side bar Top -->
       <sidebar-top-component> </sidebar-top-component>
       <!-- End Side bar top -->
 
       <!-- Start side bar left -->
-      <article class="flex  top-[60px] left-0">
-        <!-- Start sidebarLeft -->
+      <article class="flex top-[60px] left-0">
+        <!-- Start sidebar-left -->
         <sidebar-left-component> </sidebar-left-component>
         <!-- End sidebarLeft -->
-        <newfeature-card-component data-source="new-feature-data"> </newfeature-card-component>
+        <newfeature-card-component data-source="new-feature-data"></newfeature-card-component>
       </article>
     </section>
     <!-- End Side Bar  & Card-->
@@ -38,12 +41,32 @@
     <!-- Start Footer Section -->
     <footer-component> </footer-component>
     <!-- End footer -->
+
     <script src="../assets/js/main.js"></script>
-    <script type="module" src="../assets/js/commponent/homepage-navbar.js"></script>
-    <script type="module" src="../assets/js/commponent/footer.js"></script>
-    <script type="module" src="../assets/js/commponent/sidebarLeft.js"></script>
-    <script type="module" src="../assets/js/commponent/sidebarTop.js"></script>
-    <script type="module" src="../assets/js/commponent/feature-card.js"></script>
+    <!-- JS nav bar component -->
+    <script
+      type="module"
+      src="../assets/js/commponent/navbar-component.js"
+    ></script>
+    <!-- JS footer component -->
+    <script
+      type="module"
+      src="../assets/js/commponent/footer-component.js"
+    ></script>
+    <!-- JS sidebar-left component -->
+    <script
+      type="module"
+      src="../assets/js/commponent/sidebar-left-component.js"
+    ></script>
+    <!-- JS sidebar-top component -->
+    <script
+      type="module"
+      src="../assets/js/commponent/sidebar-top-component.js"
+    ></script>
+    <!-- JS feature card component -->
+    <script type="module" src="../assets/js/commponent/feature-card-component.js"></script>
+
+    <!-- JS push button slider movement functionality -->
+   
   </body>
-  
 </html>

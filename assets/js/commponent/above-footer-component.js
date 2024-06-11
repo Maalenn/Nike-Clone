@@ -1,4 +1,4 @@
-const aboveFooterContainer = () =>{
+const AboveFooterContainer = () =>{
     return `
     <section class="above-footer container-above blur-background">
         <ul class="above-menu">
@@ -75,7 +75,7 @@ const aboveFooterContainer = () =>{
 
 class AboveFooter extends HTMLElement{
     connectedCallback(){
-        this.innerHTML = aboveFooterContainer();
+        this.innerHTML = AboveFooterContainer();
     }
 }
 

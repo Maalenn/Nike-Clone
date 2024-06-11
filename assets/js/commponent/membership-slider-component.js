@@ -1,4 +1,4 @@
-import {membershipData,benefitData} from '../data/membership-data.js'
+import {membershipData,benefitData} from '../data/membership-slider-data.js'
 
 const dataSources = {
     "membership-data": membershipData,
@@ -7,7 +7,7 @@ const dataSources = {
 
 const MembershipContainer = (memberContents) =>{
     return `
-        <ul class="w-[100%] grid grid-cols-[repeat(${memberContents.length},450px)] overflow-auto slideShow">
+        <ul class="w-[100%] grid grid-cols-[repeat(${memberContents.length},450px)] overflow-auto slideShow container">
             ${memberContents.map(items => `
                 <li class="p-[5px] slide-list">
                     <a class="" href=""> 
