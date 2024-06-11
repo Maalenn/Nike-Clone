@@ -6,7 +6,7 @@
     <title>Nike.com</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="../assets/css/homePage.css" />
-    <link rel="stylesheet" href="../src/input.css">
+    <link rel="stylesheet" href="../src/input.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -15,18 +15,31 @@
   </head>
   <body>
     <!-- Start nav-bar -->
-    <div class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]" id="background-blur"></div>
+    <div
+      class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]"
+      id="background-blur"
+    ></div>
     <navbar-component> </navbar-component>
     <!-- End nav-bar -->
 
     <!-- Start Nav bar Join Us -->
-    <section class="nav-joinUs max-lg:hidden z-[1] flex max-lg:flex-col max-lg:items-start items-center justify-between p-10 bg-white gap-10 w-[100%] ">
+    <section
+      class="nav-joinUs max-lg:hidden z-[1] flex max-lg:flex-col max-lg:items-start items-center justify-between p-10 bg-white gap-10 w-[100%]"
+    >
       <div class="text-[30px] font-bold">Nike Membership</div>
       <aside>
         <ul class="flex gap-10">
           <li><a class="text-[21px] font-bold" href="">Sign Up</a></li>
-          <li><a class="text-[21px] font-bold max-md:hidden" href="">Member Product</a></li>
-          <li><a class="text-[21px] font-bold max-md:hidden" href="">Explore the Nike App</a></li>
+          <li>
+            <a class="text-[21px] font-bold max-md:hidden" href=""
+              >Member Product</a
+            >
+          </li>
+          <li>
+            <a class="text-[21px] font-bold max-md:hidden" href=""
+              >Explore the Nike App</a
+            >
+          </li>
         </ul>
       </aside>
       <div class="max-lg:hidden"></div>
@@ -40,10 +53,22 @@
           <source src="../assets/Video/coverVideo.mp4" type="video/mp4" />
         </video>
       </div>
-      <aside class="max-[960px]:top-[30px] max-md:text-left absolute inset-0 max-w-[600px] p-5 justify-center mx-auto flex flex-col text-center gap-10">
-        <h1 class="max-[960px]:text-[30px] uppercase text-[80px] font-bold text-white  ">it's better as a member</h1>
-        <p class="text-[20px] font-bold text-white">Move, Shop, Customize and Celebrate with the best of Nike.</p>
-        <button class="text-black bg-white text-[22px] font-bold rounded-[30px] p-3 w-[120px] mx-auto max-md:mx-0">Sign up</button>
+      <aside
+        class="max-[960px]:top-[30px] max-md:text-left absolute inset-0 max-w-[600px] p-5 justify-center mx-auto flex flex-col text-center gap-10"
+      >
+        <h1
+          class="max-[960px]:text-[30px] uppercase text-[80px] font-bold text-white"
+        >
+          it's better as a member
+        </h1>
+        <p class="text-[20px] font-bold text-white">
+          Move, Shop, Customize and Celebrate with the best of Nike.
+        </p>
+        <button
+          class="text-black bg-white text-[22px] font-bold rounded-[30px] p-3 w-[120px] mx-auto max-md:mx-0"
+        >
+          Sign up
+        </button>
       </aside>
     </section>
     <!-- End Cover Section -->
@@ -51,32 +76,34 @@
     <!-- Start benefit section -->
     <section class="flex justify-center">
       <section class="max-w-[91%] h-full">
-          <div class="scroll-info container flex items-center">
-              <div class="scroll-des">
-                  <h1>Member Benefits</h1>
-              </div>
-              <!-- push botton to make slider move -->
-              <push-btn-component> </push-btn-component>
-            </div>
-            <membership-slider-component data-source="benefit-data"> </membership-slider-component>
-          </section>
+        <div class="scroll-info container flex items-center">
+          <div class="scroll-des">
+            <h1>Member Benefits</h1>
+          </div>
+          <!-- push botton to make slider move -->
+          <push-btn-component> </push-btn-component>
+        </div>
+        <membership-slider-component data-source="benefit-data">
+        </membership-slider-component>
+      </section>
     </section>
     <!-- End Benefit section -->
-    
+
     <!-- Start transform section -->
-    <shipping-slider-component data-source="shipping-data"> </shipping-slider-component>
+    <shipping-slider-component data-source="shipping-data">
+    </shipping-slider-component>
     <!-- End transform section -->
-    
+
     <!--Start Membership  -->
     <div class="py-40">
-      <img src="../assets/Image/nike-membership.jpg" alt="">
+      <img src="../assets/Image/nike-membership.jpg" alt="" />
     </div>
-    <!-- End Membership  --> 
+    <!-- End Membership  -->
 
     <!-- Start Connect section -->
     <connected-component data-source="connect-data"> </connected-component>
     <!-- End Connect section -->
-    
+
     <!-- Start Auto Video -->
     <div class="">
       <video width="100%" height="100%" autoplay muted loop>
@@ -92,30 +119,47 @@
     <!-- Start hero bottom -->
     <section class="flex justify-center">
       <div class="max-w-[91%] mx-auto">
-          <img src="../assets/Image/Nike_MemberShip_Show.jpg" alt="">
-        </div>
+        <img src="../assets/Image/Nike_MemberShip_Show.jpg" alt="" />
+      </div>
     </section>
     <!-- End hero bottom -->
 
     <!-- Start Footer Section -->
     <footer-component> </footer-component>
     <!-- End footer -->
-
   </body>
-    <!-- JS join us page functionality -->
-    <script src="../assets/js/main.js"></script>
-    <!-- JS nav bar component -->
-    <script type="module" src="../assets/js/commponent/navbar-component.js"></script>
-    <!-- JS footer component -->
-    <script type="module" src="../assets/js/commponent/footer-component.js"></script>
-    <!-- JS membership slider component -->
-    <script type="module" src="../assets/js/commponent/membership-slider-component.js"></script>
-    <!-- JS shipping cart component -->
-    <script type="module" src="../assets/js/commponent/shipping-card-component.js"></script>
-    <!-- JS connect through component -->
-    <script type="module" src="../assets/js/commponent/connect-through-component.js"></script>
-    <!-- JS push button slider movement functionality -->
-    <script type="module" src="../assets/js/commponent/push-button-component.js"></script>
-    <!-- JS FQA component -->
-    <script type="module" src="../assets/js/commponent/fqa-component.js"></script>
+  <!-- JS join us page functionality -->
+  <script src="../assets/js/main.js"></script>
+  <!-- JS nav bar component -->
+  <script
+    type="module"
+    src="../assets/js/commponent/navbar-component.js"
+  ></script>
+  <!-- JS footer component -->
+  <script
+    type="module"
+    src="../assets/js/commponent/footer-component.js"
+  ></script>
+  <!-- JS membership slider component -->
+  <script
+    type="module"
+    src="../assets/js/commponent/membership-slider-component.js"
+  ></script>
+  <!-- JS shipping cart component -->
+  <script
+    type="module"
+    src="../assets/js/commponent/shipping-card-component.js"
+  ></script>
+  <!-- JS connect through component -->
+  <script
+    type="module"
+    src="../assets/js/commponent/connect-through-component.js"
+  ></script>
+  <!-- JS push button slider movement functionality -->
+  <script
+    type="module"
+    src="../assets/js/commponent/push-button-component.js"
+  ></script>
+  <!-- JS FQA component -->
+  <script type="module" src="../assets/js/commponent/fqa-component.js"></script>
 </html>

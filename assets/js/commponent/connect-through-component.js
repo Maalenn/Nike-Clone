@@ -1,4 +1,4 @@
-import {ConnectData } from "../data/connect-through-slider-data.js";
+import { ConnectData } from "../data/connect-through-slider-data.js";
 
 const dataSources = {
   "connect-data": ConnectData,

@@ -1,5 +1,5 @@
-const FooterContainer = () =>{
-    return `
+const FooterContainer = () => {
+  return `
     <footer class="footer">
         <section class="container footer-main">
             <section class=" footer-section">
@@ -168,13 +168,13 @@ const FooterContainer = () =>{
     </section>
     
   </footer>
-    `
+    `;
+};
+
+class Footer extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = FooterContainer();
+  }
 }
 
-class Footer extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML = FooterContainer();
-    }
-}
-
-customElements.define("footer-component", Footer)
+customElements.define("footer-component", Footer);

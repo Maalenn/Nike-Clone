@@ -1,5 +1,5 @@
-const SidebarLeftContainer = () =>{
-    return `
+const SidebarLeftContainer = () => {
+  return `
     <section class="w-[300px] shrink-0 px-20  max-md:hidden ">
         <div class="flex items-center gap-7 pt-10 mb-10">
             <a href="">
@@ -419,16 +419,16 @@ const SidebarLeftContainer = () =>{
             </li>
         </ul>
     </section>
-    `
+    `;
+};
+
+class SidebarLeft extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = SidebarLeftContainer();
+  }
 }
 
-class SidebarLeft extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML = SidebarLeftContainer();
-    }
-}
-
-customElements.define("sidebar-left-component", SidebarLeft)
+customElements.define("sidebar-left-component", SidebarLeft);
 
 // function arrow drop and up
 let accordionBtn = document.querySelectorAll("#accordion-btn");
@@ -442,4 +442,3 @@ accordionBtn.forEach((btn, i) => {
     closeIcon[i].classList.toggle("hidden");
   });
 });
-

@@ -1,14 +1,17 @@
-import {CartSliderData} from '../data/cart-slider-data.js'
+import { CartSliderData } from "../data/cart-slider-data.js";
 
-const dataSources =
-{
-    "cart-slider-data": CartSliderData
-}
+const dataSources = {
+  "cart-slider-data": CartSliderData,
+};
 
-const CartSliderContainer = (cartContents) =>{
-    return `
-        <ul class="w-[100%] max-max-[1400px] grid  grid-cols-[repeat(${cartContents.length},500px)] max-lg:grid-cols-[repeat(11,300px)] overflow-auto slideShow">
-            ${cartContents.map(items => `
+const CartSliderContainer = (cartContents) => {
+  return `
+        <ul class="w-[100%] max-max-[1400px] grid  grid-cols-[repeat(${
+          cartContents.length
+        },500px)] max-lg:grid-cols-[repeat(11,300px)] overflow-auto slideShow">
+            ${cartContents
+              .map(
+                (items) => `
                 <li class="py-[20px] slide-list px-2">
                     <a class="" href=""> 
                         <figure class="">
@@ -22,11 +25,13 @@ const CartSliderContainer = (cartContents) =>{
                         </figure>
                     </a>
                 </li>
-            `).join("")}
+            `
+              )
+              .join("")}
         </ul>
                
-    `
-}
+    `;
+};
 
 class CartSlider extends HTMLElement {
   connectedCallback() {

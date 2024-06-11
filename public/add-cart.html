@@ -16,7 +16,10 @@
   </head>
   <body>
     <!-- Start nav-bar -->
-    <div class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]" id="background-blur"></div>
+    <div
+      class="top-0 backdrop-blur-[5px] bg-[rgb(35,33,33,0.2)] w-full hidden h-screen fixed z-[90]"
+      id="background-blur"
+    ></div>
     <navbar-component> </navbar-component>
     <!-- End nav-bar -->
 
@@ -305,17 +308,18 @@
     <!-- Start Product slider section -->
     <section class="flex justify-center">
       <section class="max-w-[55.5%] max-lg:max-w-[80%] h-full">
-          <div class="scroll-info container">
-              <div class="">
-                  <h1 class="text-[30px]">You Might Also link</h1>
-              </div>
-              <!-- push botton to make slider move -->
-              <push-btn-component> </push-btn-component>
-            </div>
-            <cart-slider-component data-source="cart-slider-data"> </cart-slider-component>
-          </section>
+        <div class="scroll-info container">
+          <div class="">
+            <h1 class="text-[30px]">You Might Also link</h1>
+          </div>
+          <!-- push botton to make slider move -->
+          <push-btn-component> </push-btn-component>
+        </div>
+        <cart-slider-component data-source="cart-slider-data">
+        </cart-slider-component>
       </section>
-    
+    </section>
+
     <!-- End Product slider section -->
 
     <!-- Start Footer Section -->
@@ -326,12 +330,24 @@
     <script src="../assets/js/main.js"></script>
 
     <!-- JS nav bar component -->
-    <script type="module" src="../assets/js/commponent/navbar-component.js"> </script>
+    <script
+      type="module"
+      src="../assets/js/commponent/navbar-component.js"
+    ></script>
     <!-- JS footer component -->
-    <script type="module" src="../assets/js/commponent/footer-component.js"></script>
+    <script
+      type="module"
+      src="../assets/js/commponent/footer-component.js"
+    ></script>
     <!-- JS card-slider component -->
-    <script type="module" src="../assets/js/commponent/cart-slider-component.js"></script>
+    <script
+      type="module"
+      src="../assets/js/commponent/cart-slider-component.js"
+    ></script>
     <!-- JS push button slider movement functionality -->
-    <script type="module" src="../assets/js/commponent/push-button-component.js"></script>
+    <script
+      type="module"
+      src="../assets/js/commponent/push-button-component.js"
+    ></script>
   </body>
 </html>
