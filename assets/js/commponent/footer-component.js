@@ -25,64 +25,63 @@ const FooterContainer = () => {
                     <li class="footer-list">
                         <a href=""> Site Feedback </a>
                     </li>
-                    </ul>
+                </ul>
                     <hr class="line-width">
                     <ul class="footer-menu">
-                    <li class="footer-list">
-                        <a href=""> HELP </a>
-                    </li>
-                <ul>
-                    <li class="footer-list">
-                    <a href=""> Get Help</a>
-                    </li>
-                    <li class="footer-list">
-                    <a href="">Order Status</a>
-                    </li>
-                    <li class="footer-list">
-                    <a href="">Shipping and Delivery </a>
-                    </li>
-                    <li class="footer-list">
-                    <a href=""> Returns </a>
-                    </li>
-                    <li class="footer-list">
-                    <a href=""> Order Cancellation </a>
-                    </li>
-                    <li class="footer-list">
-                    <a href=""> Payment Options </a>
-                    </li>
-                    <li class="footer-list">
-                    <a href=""> Gift Card Balance </a>
-                    </li>
-                    <li class="footer-list">
-                    <a href=""> Contact Us </a>
-                    </li>
-                </ul>
-                
+                      <li class="footer-list">
+                          <a href=""> HELP </a>
+                      </li>
+                        <ul>
+                        <li class="footer-list">
+                        <a href=""> Get Help</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="">Order Status</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="">Shipping and Delivery </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href=""> Returns </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href=""> Order Cancellation </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href=""> Payment Options </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href=""> Gift Card Balance </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href=""> Contact Us </a>
+                        </li>
+                    </ul>
                 </ul>
                 <ul class="footer-menu">
-                <li class="footer-list">
-                    <a href=""> COMPANY </a>
-                </li>
-                <ul> 
-                <li class="footer-list">
-                    <a href=""> About Nike </a>
-                </li>
-                <li class="footer-list">
-                    <a href="">News</a>
-                </li>
-                <li class="footer-list">
-                    <a href=""> Careers </a>
-                </li>
-                <li class="footer-list">
-                    <a href=""> Investors </a>
-                </li>
-                <li class="footer-list">
-                    <a href=""> purpose </a>
-                </li>
-                <li class="footer-list">
-                    <a href=""> Sustainability </a>
-                </li>
-                </ul>
+                    <li class="footer-list">
+                        <a href=""> COMPANY </a>
+                    </li>
+                    <ul> 
+                        <li class="footer-list">
+                            <a href=""> About Nike </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="">News</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href=""> Careers </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href=""> Investors </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href=""> purpose </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href=""> Sustainability </a>
+                        </li>
+                    </ul>
                 </ul>
                 <ul class="footer-menu">
                 <li class="footer-list">

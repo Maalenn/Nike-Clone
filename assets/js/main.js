@@ -61,3 +61,4 @@ accordionBtn.forEach((btn, i) => {
     closeIcon[i].classList.toggle("hidden");
   });
 });
+

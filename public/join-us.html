@@ -81,7 +81,7 @@
             <h1>Member Benefits</h1>
           </div>
           <!-- push botton to make slider move -->
-          <push-btn-component> </push-btn-component>
+          <push-btn-component index-btn="0"> </push-btn-component>
         </div>
         <membership-slider-component data-source="benefit-data">
         </membership-slider-component>
@@ -90,8 +90,18 @@
     <!-- End Benefit section -->
 
     <!-- Start transform section -->
-    <shipping-slider-component data-source="shipping-data">
-    </shipping-slider-component>
+    <section class="flex justify-center">
+      <section class="max-w-[91%] h-full">
+          <div class="scroll-info container flex items-center">
+              <div class="scroll-des">
+              <h1>Member Also Get</h1>
+              </div>
+              <push-btn-component index-btn="1" > </push-btn-component>
+          </div>
+          <shipping-slider-component data-source="shipping-data">
+          </shipping-slider-component>
+      </section>
+    </section>
     <!-- End transform section -->
 
     <!--Start Membership  -->

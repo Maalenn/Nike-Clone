@@ -306,14 +306,14 @@
     <!-- End Shopping checkout -->
 
     <!-- Start Product slider section -->
-    <section class="flex justify-center">
-      <section class="max-w-[55.5%] max-lg:max-w-[80%] h-full">
+    <section class="flex justify-center mt-20">
+      <section class="max-w-[70%] max-lg:max-w-[80%] h-full">
         <div class="scroll-info container">
           <div class="">
             <h1 class="text-[30px]">You Might Also link</h1>
           </div>
           <!-- push botton to make slider move -->
-          <push-btn-component> </push-btn-component>
+          <push-btn-component index-btn="0"> </push-btn-component>
         </div>
         <cart-slider-component data-source="cart-slider-data">
         </cart-slider-component>
@@ -321,6 +321,10 @@
     </section>
 
     <!-- End Product slider section -->
+
+    <!-- Section link above footer -->
+    <above-footer-component data-source="above-footer-data"> </above-footer-component>
+    <!-- End link above footer -->
 
     <!-- Start Footer Section -->
     <footer-component> </footer-component>
@@ -348,6 +352,11 @@
     <script
       type="module"
       src="../assets/js/commponent/push-button-component.js"
+    ></script>
+    <!-- JS above footer component -->
+    <script
+      type="module"
+      src="../assets/js/commponent/above-footer-component.js"
     ></script>
   </body>
 </html>
