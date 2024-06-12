@@ -17,6 +17,12 @@ export const MembershipData = [
     desMember: "Your Customization Service",
     btnMember: "Customize",
   },
+  {
+    imgMember: "../assets/Image/up1.jpeg",
+    titleMember: "Member Product",
+    desMember: "Your Exclusive Access",
+    btnMember: "shop",
+  },
 ];
 
 export const BenefitData = [
